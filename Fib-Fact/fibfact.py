@@ -6,7 +6,7 @@ def fibonacci(n:int):
 def fatorial(n:int):
     return n*fatorial(n-1) if n != 0 else 1
 
-# Conversão do formato de dados do arquivo (duas colunas) para uma lista de listas
+# Conversão do formato de dados do arquivo (colunas) para uma lista de listas
 def list_parse(conteudo:str):
     lista = []
     for linha in conteudo.splitlines():
@@ -32,8 +32,6 @@ dados = arquivo.read()
 
 # Transforma-se o conteúdo no formato lista de listas 
 par_dados = list_parse(dados)
-
-print(par_dados)
 
 # Cálculos de fibonacci/fatorial
 res = [[fibonacci(i[0]), fatorial(i[1])] for i in par_dados]
