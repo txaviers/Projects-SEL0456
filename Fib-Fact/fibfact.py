@@ -8,8 +8,14 @@ def fatorial(n:int):
 
 # Conversão do formato de dados do arquivo (duas colunas) para uma lista de listas
 def list_parse(conteudo:str):
-    dados = conteudo.split()
-    return [[int(dados[i]),int(dados[i+1])] for i in range(0, len(dados), 2)]
+    lista = []
+    for linha in conteudo.splitlines():
+        try:
+            lista.append(list(map(int, linha.split())))
+        except ValueError:
+            pass     
+
+    return lista
 
 # Conversão de retorno de lista de listas para o formato de dados do arquivo .dat (duas colunas)
 def two_column_parse(lt:list):
@@ -26,6 +32,9 @@ dados = arquivo.read()
 
 # Transforma-se o conteúdo no formato lista de listas 
 par_dados = list_parse(dados)
+
+print(par_dados)
+
 # Cálculos de fibonacci/fatorial
 res = [[fibonacci(i[0]), fatorial(i[1])] for i in par_dados]
 
