@@ -11,3 +11,5 @@ Repositório de projetos para a disciplina *SEL0456 - Desenvolvimento de Softwar
 
   Linha n: Fib(x)=X Fact(y)=Y <br />
 **Projeto 4:** Continuação do Projeto 3 com adição, no mesmo diretório, de um teste automatizado (check.py) para ler um arquivo com alguns números já pré calculados (test1.dat e test2.dat) e comparar com o calculado pelas funções fatorial/fibonacci do programa fibfact.py.<br />
+
+**Projeto Final:** Desenvolvimento de um software para conversão de unidades (app.py), utilizando layouts XML feitos com Glade (.glade) e scripts de classes e funções diversas (inverse.py, func.py e config_handler.py). As medidas e unidades são salvas em um arquivo de configuração (config.json), que pode ser editado manualmente ou utilizando as funcionalidades do próprio programa, como explicado na opção 'Sobre' do menu 'Ajuda' do aplicativo. 
