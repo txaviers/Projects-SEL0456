@@ -1,0 +1,17 @@
+{
+    "Comprimento": {
+        "Metro": 1,
+        "Centímetro": 100,
+        "Milímetro": 1000,
+        "Quilômetro": 0.001,
+        "Micrômetro": 1000000.0,
+        "Jarda": 1.09361,
+        "Polegada": 39.3701,
+        "Milha Náutica": 0.000539957
+    },
+    "Temperatura": {
+        "Celsius/Fahrenheit": "lambda C : 9*C/5 + 32",
+        "Celsius/Kelvin": "lambda C : C + 273.15",
+        "Fahrenheit/Kelvin": "lambda F : 5*(F-32)/9 + 273.15"
+    }
+}
