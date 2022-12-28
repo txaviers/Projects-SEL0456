@@ -2,7 +2,7 @@
 from fibfact import *
 
 # Lê o conteúdo do arquivo de teste
-arquivo = open('test2.dat','r')
+arquivo = open('Fib-Fact-Test/test2.dat','r')
 dados = arquivo.read()
 
 # Transforma as linhas do arquivo em uma lista de listas
